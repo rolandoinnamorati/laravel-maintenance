@@ -7,6 +7,8 @@ use Rolandoinnamorati\Maintenance\commands\PublishMaintenance;
 
 class MaintenanceServiceProvider extends ServiceProvider
 {
+    protected $defer = false;
+
     public function boot()
     {
 
