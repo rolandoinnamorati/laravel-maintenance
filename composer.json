@@ -1,0 +1,32 @@
+{
+    "name": "rolandoinnamorati/laravel-maintenance",
+    "description": "This package used to improve laravel maintenace mode",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": ">5.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rolando Innamorati",
+            "email": "info@rolandoinnamorati.it"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Rolandoinnamorati\\LaravelMaintenance\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Rolandoinnamorati\\LaravelMaintenance\\MaintenanceServiceProvider"
+            ],
+            "aliases": {
+                "LaravelMaintenance": "Rolandoinnamorati\\LaravelMaintenance\\Maintenance"
+            }
+        }
+    }
+}
